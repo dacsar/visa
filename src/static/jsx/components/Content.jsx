@@ -3,9 +3,12 @@ import {Modal, Grid, Typography} from '@material-ui/core';
 import {withStyles} from '@material-ui/core/styles';
 import Question from './Question';
 import {ContentStyles} from './Styles';
+import Header from './Header';
 import ContentStep1 from './ContentStep1';
 import ContentStep2 from './ContentStep2';
-import bg from '../../img/img4.jpg';
+import ContentStep3 from './ContentStep3';
+import ContentStep4 from './ContentStep4';
+import Footer from './Footer';
 
 const styles = ContentStyles;
 
@@ -48,13 +51,14 @@ class Content extends React.Component{
           <Grid container 
             direction='column' 
             className={classes.contentwrapper}>
-            <Grid className={classes.header} style ={ { backgroundImage: "url("+bg+")" } }>
-              <Typography className={classes.headertitle}>点数計算するサイトです的な文章</Typography>
-            </Grid>    
+            <Header />
             <ContentStep1 
               category={this.state.category} 
               func={this.handleCategory}/>
             <ContentStep2 func={this.toggleModal}/> 
+            <ContentStep3 />
+            <ContentStep4 />
+            <Footer />
           </Grid>
         </Grid>
       </React.Fragment>

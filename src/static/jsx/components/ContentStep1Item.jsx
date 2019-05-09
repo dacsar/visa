@@ -23,7 +23,7 @@ class ContentStep1Item extends React.Component{
     const {classes} = this.props;
     return(
       <Paper className={this.checkSelecteditem1()} onClick={this.props.func}>
-        <img src={this.props.imgPath} className={classes.img} />
+        <Grid className={classes.img} style={{backgroundImage : 'url('+this.props.imgPath+')'}}></Grid>
         <Grid container
           justify='center'
           alignItems='center'

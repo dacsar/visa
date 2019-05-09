@@ -92,22 +92,24 @@ const ContentStyles = theme => ({
   contentwrapper: {
     position: 'relative',
     width: '100%',
-    height: 4000,
+    height: 3000,
     backgroundColor: '#f5f5f5',
   },
+});
+
+const HeaderStyles = theme => ({
   header: {
     position: 'absolute',
     width: '100%',
-    height: '15%',
-    backgroundSize: 'cover',
-    border: 'medium solid #4caf50',
+    height: '26%',
+    backgroundColor: 'rgba(6, 147, 227, 0.6)',
   },
   headertitle: {
     position: 'absolute',
-    color: '#ffffff',
     fontSize: 40,
+    color: '#f5f5f5',
     fontWeight: 'bold',
-    top: '30%'
+    top: '15%'
   }
 });
 
@@ -115,24 +117,24 @@ const ContentStep1Styles = theme => ({
   step1wrapper: {
     position: 'absolute',
     width: '100%',
-    height: '20%',
-    top: '15%',
-    border: 'medium solid #4caf50',
+    height: '26%',
+    top: '26%',
+  },
+  step1contentwrapper: {
+    width: '100%',
+    height: '90%',
   },
   subtitlewrapper: {
     width: '100%',
     height: '15%',
-    border: 'medium solid #e91e63'
   },
   itemswrapper: {
     width: '100%',
     height: '60%',
-    border: 'medium solid #e91e63'
   },
   textwrapper: {
     width: '100%',
     height: '25%',
-    border: 'medium solid #e91e63'
   },
   item: {
     width: '25%',
@@ -146,6 +148,8 @@ const ContentStep1Styles = theme => ({
   },
   img: {
     width: '100%',
+    height: '60%',
+    backgroundSize: 'cover',
     borderTopRightRadius: 20,
     borderTopLeftRadius: 20,
   },
@@ -157,7 +161,6 @@ const ContentStep1Styles = theme => ({
   titleinpaperwrapper: {
     width: '100%',
     height: '40%',
-    border: 'medium solid #4caf50',
   },
   titleinpaper :{
     fontSize: 17,
@@ -189,19 +192,17 @@ const ContentStep2Styles = theme => ({
   step2wrapper: {
     position: 'absolute',
     width: '100%',
-    height: '10%',
-    top: '35%',
+    height: '15%',
+    top: '52%',
     backgroundColor: '#0d47a1',
   },
   step2topwrapper: {
     width: '100%',
     height: '70%',
-    border: 'medium solid #e91e63'
   },
   step2bottomwrapper: {
     width: '100%',
     height: '30%',
-    border: 'medium solid #e91e63'
   },
   subtitle: {
     color: '#f5f5f5',
@@ -213,5 +214,81 @@ const ContentStep2Styles = theme => ({
   }
 })
 
+const ContentStep3Styles = theme => ({
+  step3wrapper: {
+    position: 'absolute',
+    width: '100%',
+    height: '15%',
+    top: '67%',
+    backgroundColor: 'rgba(6, 147, 227, 0.6)'
+  },
+  step3topwrapper: {
+    width: '100%',
+    height: '70%',
+  },
+  step3bottomwrapper: {
+    width: '100%',
+    height: '30%',
+  },
+  subtitle: {
+    color: '#f5f5f5',
+    fontSize: 35,
+    fontWeight: 'bold',
+  },
+  button: {
+
+  }
+})
+
+const ContentStep4Styles = theme => ({
+  step4wrapper: {
+    position: 'absolute',
+    width: '100%',
+    height: '13%',
+    top: '82%',
+    backgroundColor: '#0d47a1',
+  },
+  step4topwrapper: {
+    width: '100%',
+    height: '70%',
+  },
+  step4bottomwrapper: {
+    width: '100%',
+    height: '30%',
+  },
+  subtitle: {
+    color: '#f5f5f5',
+    fontSize: 35,
+    fontWeight: 'bold',
+  },
+  button: {
+    color: '#0d47a1'
+  }
+})
+
+const FooterStyles = theme => ({
+  footerwrapper: {
+    position: 'absolute',
+    width: '100%',
+    height: '5%',
+    top: '95%',
+    backgroundColor: 'rgba(6, 147, 227, 0.6)',
+  },
+  footertopwrapper: {
+    width: '100%',
+    height: '70%',
+  },
+  footerbottomwrapper: {
+    width: '100%',
+    height: '30%',
+  },
+  subtitle: {
+    color: '#f5f5f5',
+    fontSize: 35,
+    fontWeight: 'bold',
+  },
+})
+
 export {QxStyles, QuestionStyles, ContentStyles, NavBarStyles,
-        ContentStep1Styles, ContentStep2Styles};
+        ContentStep1Styles, ContentStep2Styles, HeaderStyles, ContentStep3Styles,
+        ContentStep4Styles, FooterStyles};

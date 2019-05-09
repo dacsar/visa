@@ -29,70 +29,74 @@ class ContentStep1 extends React.Component{
     return(
       <React.Fragment>
         <Grid container 
-          direction='column'
+          alignItems='center'
           className={classes.step1wrapper}>
-            <Grid container item
-              justify='center'
-              alignItems='center'
-              className={classes.subtitlewrapper}>
-                <Typography className={classes.subtitle}>
-                  Select Categories of Activities of Highly-Skilled Foreign Professionals
-                </Typography>
-            </Grid>
-            <Grid container item
-              justify='space-around'
-              alignItems='center'
-              className={classes.itemswrapper}>
-                <ContentStep1Item 
-                  value = '0'
-                  category={this.props.category}
-                  imgPath={imgPath1} 
-                  title1='Advanced academic research activities' 
-                  title2='「Highly-Skilled Professional(i)(a)」'
-                  func={() => this.handleCategory('0')}/>
-                <ContentStep1Item 
-                  value = '1'
-                  category={this.props.category}
-                  imgPath={imgPath2} 
-                  title1='Advanced specialized/technical activities' 
-                  title2='「Highly-Skilled Professional(i)(b)」'
-                  func={() => this.handleCategory('1')}/>
-                <ContentStep1Item 
-                  value = '2'
-                  category={this.props.category}
-                  imgPath={imgPath3} 
-                  title1='Advanced business management activities' 
-                  title2='「Highly-Skilled Professional(i)(c)」'
-                  func={() => this.handleCategory('2')}/>
-            </Grid>
-            <Grid container item
-              justify='center'
-              direction='column'
-              className={classes.textwrapper}>
-                <Grid container
-                  justify='center'
-                  alignContent='center'
-                  className={classes.texttopwrapper}>
-                    <Typography 
-                      align='center'
-                      className={classes.textinbottom}>
-                      {textlist[this.props.category]}
-                    </Typography>
-                </Grid>
-                <Grid container
-                  justify='center'
-                  alignContent='center'
-                  className={classes.textbottomwrapper}>
-                    {this.props.category &&
-                    <Button 
-                      variant='outlined' 
-                      color='primary' 
-                      size='large'
-                      className={classes.button}>
-                        Details
-                    </Button>}
-                </Grid>
-            </Grid>
+          <Grid container item
+            direction='column' 
+            className={classes.step1contentwrapper}>
+              <Grid container item
+                justify='center'
+                alignItems='center'
+                className={classes.subtitlewrapper}>
+                  <Typography className={classes.subtitle}>
+                    Select Categories of Activities of Highly-Skilled Foreign Professionals
+                  </Typography>
+              </Grid>
+              <Grid container item
+                justify='space-around'
+                alignItems='center'
+                className={classes.itemswrapper}>
+                  <ContentStep1Item 
+                    value = '0'
+                    category={this.props.category}
+                    imgPath={imgPath1} 
+                    title1='Advanced academic research activities' 
+                    title2='「Highly-Skilled Professional(i)(a)」'
+                    func={() => this.handleCategory('0')}/>
+                  <ContentStep1Item 
+                    value = '1'
+                    category={this.props.category}
+                    imgPath={imgPath2} 
+                    title1='Advanced specialized/technical activities' 
+                    title2='「Highly-Skilled Professional(i)(b)」'
+                    func={() => this.handleCategory('1')}/>
+                  <ContentStep1Item 
+                    value = '2'
+                    category={this.props.category}
+                    imgPath={imgPath3} 
+                    title1='Advanced business management activities' 
+                    title2='「Highly-Skilled Professional(i)(c)」'
+                    func={() => this.handleCategory('2')}/>
+              </Grid>
+              <Grid container item
+                justify='center'
+                direction='column'
+                className={classes.textwrapper}>
+                  <Grid container
+                    justify='center'
+                    alignContent='center'
+                    className={classes.texttopwrapper}>
+                      <Typography 
+                        align='center'
+                        className={classes.textinbottom}>
+                        {textlist[this.props.category]}
+                      </Typography>
+                  </Grid>
+                  <Grid container
+                    justify='center'
+                    alignContent='center'
+                    className={classes.textbottomwrapper}>
+                      {this.props.category &&
+                      <Button 
+                        variant='outlined' 
+                        color='primary' 
+                        size='large'
+                        className={classes.button}>
+                          Details
+                      </Button>}
+                  </Grid>
+              </Grid>
+          </Grid>
         </Grid>
       </React.Fragment>
     );

@@ -10,8 +10,8 @@ class NavBar extends React.Component{
   render(){
     const {classes}=this.props
     return(
-      <div>
-        <AppBar className={classes.appbar}>
+      <React.Fragment>
+        <AppBar className={classes.appbar} color='default'>
           <Toolbar>
             <IconButton 
               color='inherit' 
@@ -21,13 +21,13 @@ class NavBar extends React.Component{
             </IconButton>
             <Typography
               variant='title'
-                color='inherit'
-                className={classes.title}>
+              color='inherit'
+              className={classes.title}>
               visa
             </Typography>
           </Toolbar>
         </AppBar>
-      </div>
+      </React.Fragment>
     );
   }
 }
