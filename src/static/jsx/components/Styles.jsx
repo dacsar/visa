@@ -18,7 +18,7 @@ const QxStyles  = theme => ({
     left: 0,
     height: '10%',
     width: '100%',
-    backgroundColor: '#2196f3'
+    backgroundColor: 'rgba(6, 147, 227, 0.6)'
   },
   headertitlewrapper: {
     height: '100%',
